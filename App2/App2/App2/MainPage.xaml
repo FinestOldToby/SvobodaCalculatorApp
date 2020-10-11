@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage">
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Labelnum1" Text="První číslo:" Grid.Row="0" Grid.Column="0" FontSize="20"/>
+        <Entry x:Name="cislo1" Keyboard="Numeric" Placeholder="Číslo 1" Grid.Row="0" Grid.Column="1" />
+        <Label x:Name="Labelnum2" Text="Druhé číslo:" Grid.Row="1" Grid.Column="0" FontSize="20"/>
+        <Entry x:Name="cislo2" Keyboard="Numeric" Placeholder="Číslo 2" Grid.Row="1" Grid.Column="1" />
+        <Label x:Name="Labelres" Text="Výsledek je:" Grid.Row="2" Grid.Column="0" FontSize="20"/>
+        <Label x:Name="vysledek" Grid.Row="2" Grid.Column="1" FontSize="20"/>
+        <Button x:Name="BtnSec" Text="Sečíst" Grid.Row="3" Grid.Column="0" Clicked="BtnPrecist" />
+        <Button x:Name="BtnOde" Text="Odečíst" Grid.Row="3" Grid.Column="1" Clicked="BtnOdecist" />
+        <Button x:Name="BtnNasob" Text="Vynásobit" Grid.Row="4" Grid.Column="0" Clicked="BtnVynasobit" />
+        <Button x:Name="BtnDel" Text="Vydělit" Grid.Row="4" Grid.Column="1" Clicked="BtnDelit" />
+        <Button x:Name="BtnZbytek" Text="Získat zbytek" Grid.Row="5" Grid.Column="0" Clicked="BtnDelitAZiskatZbytek" />
+        <Button x:Name="BtnCistit" Text="Vyčistit pole" Grid.Row="5" Grid.Column="1" Clicked="BtnVycistitPole" />
+    </Grid>
+
+</ContentPage>
